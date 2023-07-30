@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="sfondo" alignment="CENTER" prefHeight="596.0" prefWidth="531.0" spacing="20.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quiz.QuizController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox alignment="CENTER" prefHeight="526.0" prefWidth="489.0">
+      <children>
+         <Label fx:id="lblCategories" alignment="CENTER" text="CATEGORIES" textFill="#cb9b42">
+            <font>
+               <Font name="System Bold Italic" size="24.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="652.0" prefWidth="489.0">
+      <children>
+         <ImageView fx:id="imgCalcio" fitHeight="71.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/calcio.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgBasket" fitHeight="72.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/basket.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgPallavolo" fitHeight="87.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/pallavolo.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgCiclismo" fitHeight="73.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/ciclismo.png" />
+            </image>
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </ImageView>
+      </children>
+   </HBox>
+   <HBox>
+      <children>
+         <ImageView fx:id="imgMappamondo" fitHeight="71.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/mappamondo.png" />
+            </image>
+            <HBox.margin>
+               <Insets left="50.0" right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgCartina" fitHeight="66.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/cartina.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgBandiere" fitHeight="67.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/bandiereNazioni.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgMondo" fitHeight="68.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/mondo.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <ImageView fx:id="imgReperti" fitHeight="85.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/reperti.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgHistory" fitHeight="85.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/history.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgNavi" fitHeight="90.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/navi.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgVillaggio" fitHeight="114.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/villaggio.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <ImageView fx:id="imgLibri" fitHeight="71.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/libri.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgCartoline" fitHeight="71.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/cartoline.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgUomoV" fitHeight="101.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/uomoVitruviano.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="2.0" />
+            </HBox.margin>
+         </ImageView>
+         <ImageView fx:id="imgCittà" fitHeight="78.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/città.png" />
+            </image>
+         </ImageView>
+      </children></HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0" />
+
+    <Label fx:id="scrittaInizio" alignment="CENTER" contentDisplay="CENTER" text="WELCOME TO THE QUIZ" textAlignment="CENTER" textFill="#1d37cfa6" textOverrun="LEADING_WORD_ELLIPSIS">
+      <font>
+         <Font name="Comic Sans MS Bold Italic" size="33.0" />
+      </font>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Label>
+   <Label fx:id="login_screen" text="LOGIN SCREEN" textFill="#059ffade">
+      <font>
+         <Font name="Comic Sans MS Bold Italic" size="21.0" />
+      </font>
+   </Label>
+   <HBox alignment="TOP_CENTER">
+      <children>
+         <PasswordField fx:id="username_field" promptText="username" />
+         <PasswordField fx:id="password_field" promptText="password" />
+      </children>
+   </HBox>
+   <Label fx:id="status_label" text="Login status: NOT LOGGED IN">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" />
+      </padding>
+   </Label>
+   <Button fx:id="login" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="27.0" prefWidth="59.0" style="-fx-border-color: black; -fx-background-color: lightblue;" text="Login">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+   <Button fx:id="btnWrongAnswer" mnemonicParsing="false" onAction="#onbtnWrongAnswerClick" style="-fx-background-color: green; -fx-border-color: black;" text="WrongAnswer" />
+   <HBox alignment="TOP_CENTER" prefHeight="81.0" prefWidth="491.0">
+      <children>
+         <VBox alignment="CENTER" prefHeight="185.0" prefWidth="592.0">
+            <children>
+               <Label fx:id="lblPresentazione" alignment="CENTER" text="Presentazione">
+                  <font>
+                     <Font size="18.0" />
+                  </font></Label>
+               <Label fx:id="DomandaSport" alignment="CENTER" contentDisplay="CENTER" text="QUESTION">
+                  <font>
+                     <Font name="Comic Sans MS Bold Italic" size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="5.0" />
+                  </padding></Label>
+               <RadioButton fx:id="btnRadio1Sport" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio1SportButtonClick" text="RadioButton">
+                  <padding>
+                     <Insets bottom="5.0" />
+                  </padding>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </RadioButton>
+               <RadioButton fx:id="btnRadio2Sport" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio2SportButtonClick" text="RadioButton">
+                  <padding>
+                     <Insets bottom="5.0" />
+                  </padding>
+                  <font>
+                     <Font size="14.0" />
+                  </font></RadioButton>
+               <RadioButton fx:id="btnRadio3Sport" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio3SportButtonClick" text="RadioButton">
+                  <padding>
+                     <Insets bottom="5.0" />
+                  </padding>
+                  <font>
+                     <Font size="14.0" />
+                  </font></RadioButton>
+               <RadioButton fx:id="btnRadio4Sport" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio4SportButtonClick" text="RadioButton">
+                  <padding>
+                     <Insets bottom="5.0" />
+                  </padding>
+                  <font>
+                     <Font size="14.0" />
+                  </font></RadioButton>
+               <VBox alignment="CENTER" prefHeight="197.0" prefWidth="762.0">
+                  <children>
+                     <Label fx:id="DomandaGeografia" alignment="CENTER" contentDisplay="CENTER" text="QUESTION">
+                        <font>
+                           <Font name="Comic Sans MS Bold Italic" size="16.0" />
+                        </font>
+                        <padding>
+                           <Insets bottom="5.0" />
+                        </padding>
+                     </Label>
+                     <RadioButton fx:id="btnRadio1Geografia" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio1GeografiaButtonClick" text="RadioButton">
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin>
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </RadioButton>
+                     <RadioButton fx:id="btnRadio2Geografia" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio2GeografiaButtonClick" prefHeight="25.0" text="RadioButton">
+                        <padding>
+                           <Insets bottom="5.0" />
+                        </padding>
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </RadioButton>
+                     <RadioButton fx:id="btnRadio3Geografia" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio3GeografiaButtonClick" text="RadioButton">
+                        <padding>
+                           <Insets bottom="5.0" />
+                        </padding>
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </RadioButton>
+                     <RadioButton fx:id="btnRadio4Geografia" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio4GeografiaButtonClick" text="RadioButton">
+                        <font>
+                           <Font size="14.0" />
+                        </font></RadioButton>
+                  </children>
+               </VBox>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <HBox prefHeight="346.0" prefWidth="499.0">
+      <children>
+         <VBox alignment="CENTER" prefHeight="153.0" prefWidth="536.0">
+            <children>
+               <Label fx:id="DomandaStoria" alignment="CENTER" text="QUESTION">
+                  <font>
+                     <Font name="Comic Sans MS Bold Italic" size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="5.0" />
+                  </padding>
+               </Label>
+               <RadioButton fx:id="btnRadio1Storia" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio1StoriaButtonClick" text="RadioButton">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </RadioButton>
+               <RadioButton fx:id="btnRadio2Storia" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio2StoriaButtonClick" text="RadioButton">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </RadioButton>
+               <RadioButton fx:id="btnRadio4Storia" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio4StoriaButtonClick" text="RadioButton">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </RadioButton>
+               <RadioButton fx:id="btnRadio3Storia" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#onbtnRadio3StoriaButtonClick" text="RadioButton">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </RadioButton>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <VBox alignment="CENTER" prefHeight="0.0" prefWidth="570.0">
+            <children>
+               <Label fx:id="DomandaCultura" text="QUESTION">
+                  <font>
+                     <Font name="Comic Sans MS Bold Italic" size="16.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </Label>
+               <RadioButton fx:id="btnRadio1Cultura" mnemonicParsing="false" onAction="#onbtnRadio1CulturaButtonClick" text="RadioButton">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </RadioButton>
+               <RadioButton fx:id="btnRadio2Cultura" mnemonicParsing="false" onAction="#onbtnRadio2CulturaButtonClick" text="RadioButton">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </RadioButton>
+               <RadioButton fx:id="btnRadio3Cultura" mnemonicParsing="false" onAction="#onbtnRadio3CulturaButtonClick" text="RadioButton">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </RadioButton>
+               <RadioButton fx:id="btnRadio4Cultura" mnemonicParsing="false" onAction="#onbtnRadio4CulturaButtonClick" text="RadioButton">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" />
+                  </VBox.margin>
+               </RadioButton>
+               <Button fx:id="btnNext" mnemonicParsing="false" onAction="#onbtnNextButtonClick" style="-fx-border-color: black; -fx-background-color: orange;" text="Next">
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+                  <font>
+                     <Font name="Impact" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnNextGeo" mnemonicParsing="false" onAction="#onbtnNextGeoButtonClick" style="-fx-background-color: orange; -fx-border-color: black;" text="Next">
+                  <font>
+                     <Font name="Impact" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnNextStoria" mnemonicParsing="false" onAction="#onbtnNextStoriaButtonClick" style="-fx-background-color: orange; -fx-border-color: black;" text="Next">
+                  <font>
+                     <Font name="Impact" size="14.0" />
+                  </font></Button>
+               <Button fx:id="btnNextCultura" mnemonicParsing="false" onAction="#onbtnNextCulturaButtonClick" style="-fx-background-color: orange; -fx-border-color: black;" text="Next">
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+                  <font>
+                     <Font name="Impact" size="14.0" />
+                  </font></Button>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="148.0" prefWidth="522.0">
+      <children>
+          <Button fx:id="Sport" alignment="CENTER" contentDisplay="CENTER" onAction="#onSportButtonClick" style="-fx-border-color: black; -fx-background-color: lightgreen;" text="Sport">
+            <HBox.margin>
+               <Insets bottom="10.0" right="10.0" />
+            </HBox.margin>
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font></Button>
+         <Button fx:id="Geografia" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onGeografiaButtonClick" style="-fx-border-color: black; -fx-background-color: lightgreen;" text="Geografia">
+            <HBox.margin>
+               <Insets bottom="10.0" right="10.0" />
+            </HBox.margin>
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font></Button>
+         <Button fx:id="Storia" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onStoriaButtonClick" style="-fx-border-color: black; -fx-background-color: lightgreen;" text="Storia">
+            <HBox.margin>
+               <Insets bottom="10.0" right="10.0" />
+            </HBox.margin>
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font></Button>
+         <Button fx:id="CulturaGenerale" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onCulturaGeneraleButtonClick" style="-fx-border-color: black; -fx-background-color: lightgreen;" text="CulturaGenerale">
+            <HBox.margin>
+               <Insets bottom="10.0" right="10.0" />
+            </HBox.margin>
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font></Button>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <ImageView fx:id="imgemojiUltimo" fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/emojis/emojiUltimo.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="imgemojiPenultimo" fitHeight="94.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/emojis/emojiPenultimo.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="imgemojiTerzo" fitHeight="74.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/emojis/emojiTerzo.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="imgemojiSecondo" fitHeight="75.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/emojis/emojiSecondo.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="imgemojiPrimo" fitHeight="225.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/emojis/emojiPrimo.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+   <HBox prefHeight="52.0" prefWidth="521.0">
+      <children>
+         <Label fx:id="lblUltimo" prefHeight="25.0" prefWidth="148.0" text="correct = 0" textFill="RED">
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Comic Sans MS Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="lblPenultimo" prefHeight="24.0" prefWidth="190.0" text="0 &lt; correct &lt;= 5" textFill="#ff4000">
+            <HBox.margin>
+               <Insets left="25.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Comic Sans MS Bold Italic" size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="lblTerzo" prefHeight="25.0" prefWidth="252.0" text="5 &lt; correct &lt;= 8" textAlignment="CENTER" textFill="#ffb600">
+            <HBox.margin>
+               <Insets left="20.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Comic Sans MS Bold Italic" size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Label fx:id="lblSecondo" prefHeight="25.0" prefWidth="185.0" text="8 &lt; correct &lt;= 12" textFill="#3c9008">
+            <HBox.margin>
+               <Insets left="20.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Comic Sans MS Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="lblPrimo" prefHeight="25.0" prefWidth="116.0" text="correct &gt; 12" textFill="#09ff00">
+            <HBox.margin>
+               <Insets left="20.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Comic Sans MS Bold Italic" size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <Button fx:id="Ritorna" alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onRitornaButtonClick" style="-fx-border-color: black; -fx-background-color: lightblue;" text="BACK">
+      <VBox.margin>
+         <Insets top="60.0" />
+      </VBox.margin></Button>
+</VBox>
